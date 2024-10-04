@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fiain Shoes </title>
+  <title>Fiain Shoes</title>
+  <link  href="ad (1).jpg" rel="icon" style="border-radius: 70%;  margin-right: auto;
+  margin-left: 20px;
+  object-fit: cover;">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
@@ -14,6 +17,7 @@
     body {
       margin: 0;
       box-sizing: border-box;
+      font-family: Arial, sans-serif;
     }
 
     .header {
@@ -21,33 +25,47 @@
       justify-content: space-between;
       align-items: center;
       background-color: #f5f5f5;
+      padding: 10px 20px;
       font-size: 20px;
     }
 
     .header .logo {
-      
       font-family: 'Sriracha', cursive;
       color: #000;
       text-decoration: none;
-      margin-left: 30px;
       font-size: 30px;
+    }
+
+    .header img {
+      height: 60px;
+      border-radius: 50%;
+      margin-right: auto;
+      margin-left: 20px;
     }
 
     .nav-items {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-color: #f5f5f5;
-      margin-right: 20px;
+      gap: 20px;
     }
 
     .nav-items a {
       text-decoration: none;
       color: #000;
-      padding: 35px 20px;
+      padding: 10px;
     }
 
-  
+    .nav-items .saf {
+      background-color: #5edaf0;
+      color: #000;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+    }
+
     .intro {
       display: flex;
       flex-direction: column;
@@ -55,15 +73,17 @@
       align-items: center;
       width: 100%;
       height: 520px;
-      background-image: url("https://c4.wallpaperflare.com/wallpaper/362/518/454/shoes-chucks-allstars-black-wallpaper-preview.jpg"); 
+      background-image: url("https://c4.wallpaperflare.com/wallpaper/362/518/454/shoes-chucks-allstars-black-wallpaper-preview.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      text-align: center;
+      padding: 20px;
     }
 
     .intro h1 {
       font-family: sans-serif;
-      font-size: 60px;
+      font-size: 40px;
       color: #fff;
       font-weight: bold;
       text-transform: uppercase;
@@ -74,7 +94,7 @@
       font-size: 20px;
       color: #d1d1d1;
       text-transform: uppercase;
-      margin: 20px 0;
+      margin: 10px 0;
     }
 
     .intro button {
@@ -83,63 +103,26 @@
       padding: 10px 25px;
       border: none;
       border-radius: 5px;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: bold;
       cursor: pointer;
-      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
-    }
-   
-    .achievements {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 40px 80px;
-      color: white;
-    }
-
-    .achievements .work {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0 40px;
-    }
-
-    .achievements .work i {
-      width: fit-content;
-      font-size: 50px;
-      color: #333333;
-      border-radius: 50%;
-      border: 2px solid #333333;
-      padding: 12px;
-    }
-
-    .achievements .work .work-heading {
-      font-size: 20px;
-      color: #333333;
-      text-transform: uppercase;
-      margin: 10px 0;
-    }
-
-    .achievements .work .work-text {
-      font-size: 15px;
-      color: #585858;
-      margin: 10px 0;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
     }
 
     .about-me {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      padding: 40px 80px;
-      border-top: 2px solid #eeeeee;
+      padding: 40px 20px;
+      text-align: center;
     }
 
     .about-me img {
-      width: 500px;
-      max-width: 100%;
+      width: 90%;
+      max-width: 500px;
       height: auto;
       border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     .about-me-text h2 {
@@ -155,145 +138,150 @@
       margin: 10px 0;
     }
 
-    /* CSS for footer */
     .footer {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       background-color: #c0bfce;
-      padding: 40px 80px;
+      padding: 20px 40px;
+      text-align: center;
     }
 
     .footer .copy {
       color: #333333;
+      margin-bottom: 10px;
     }
 
-    .bottom-links {
+    .achievements {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 4px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      color: white;
     }
 
-    .bottom-links .links {
+    .achievements .work {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 0 40px;
-    
     }
 
-    .bottom-links .links span {
-      font-size: 20px;
-      color: #fff;
+    .achievements .work i {
+      width: fit-content;
+      font-size: 30px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .achievements .work .work-heading {
+      font-size: 15px;
+      color: #333333;
       text-transform: uppercase;
       margin: 10px 0;
-      color: #000;
     }
 
-    .bottom-links .links a {
-      text-decoration: none;
-      color: #a1a1a1;
-      padding: 10px 20px;
-     
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .nav-items {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .intro h1 {
+        font-size: 30px;
+      }
+
+      .intro p {
+        font-size: 16px;
+      }
+
+      .intro button {
+        font-size: 16px;
+      }
+
+      .about-me {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .about-me-text h2 {
+        font-size: 25px;
+      }
+
+      .footer {
+        flex-direction: column;
+      }
     }
-    .saf {
-      background-color:  #5edaf0;
-      color: #000;
-      padding: 10px 25px;
-      border: none;
-      border-radius: 5px;
-      font-size: 20px;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
-    }
-  
-    
-   
   </style>
 </head>
 
 <body>
   <header class="header">
     <a href="#" class="logo">Fiain Shoes</a>
-    
-    <img style=" height: 90px;border-radius: 50%;
-    padding-right: 600px;" src="ad.jpg" alt="">
+    <img src="ad.jpg" alt="">
     <nav class="nav-items">
       <a href="#">Home</a>
       <a href="index1.html">LogIn</a>
       <a href="#">Sign up</a>
       <button class="saf">Download</button>
     </nav>
-    
   </header>
- 
 
   <main>
     <div class="intro">
       <h1>Pair's of Shoes</h1>
-      <p>"Shoes that make every step a fashion statement" </p>
-        <p>Discover your solemate today!
-        </p>
-        <a href="wr.html">
-      <button onclick="">Brands</button><br><br>
-    </a>
+      <p>"Shoes that make every step a fashion statement"</p>
+      <p>Discover your solemate today!</p>
+      <a href="wr.html">
+        <button>Brands</button>
+      </a>
     </div>
-    
-    
+
     <div class="about-me">
       <div class="about-me-text">
         <h2>About this</h2>
-        <p style="font-size: 20px;">"Welcome to Fiain Shoes, Our mission is to provide you with a seamless shopping 
-          experience, where you can explore a wide range of trendy shoes that reflect your unique style.
-          With Saff Cart, you can step into every occasion with confidence. Whether you're looking for casual sneakers,
-           elegant heels, or comfy flats, we've got you covered. We believe that everyone deserves to
-            express their individuality through fashion, and that's why we offer affordable prices without compromising on quality.
-         Join our Saff Cart community today and embark on a fashionable journey with us. Get ready to elevate your 
-          shoe game and step into a world of style!"
-          
-          Hope you like it! Let me know if you need any further assistance. 😊👠</p>
+        <p style="font-size: 20px;">"Welcome to Fiain Shoes, Our mission is to provide you with a seamless shopping
+          experience, where you can explore a wide range of trendy shoes that reflect your unique style. With Saff Cart,
+          you can step into every occasion with confidence. Whether you're looking for casual sneakers, elegant heels, or comfy flats, we've got you covered. We believe that everyone deserves to express their individuality through fashion, and that's why we offer affordable prices without compromising on quality. Join our Saff Cart community today and embark on a fashionable journey with us. Get ready to elevate your shoe game and step into a world of style!"
+          Hope you like it! Let me know if you need any further assistance. 😊👠</p>
       </div>
       <img src="https://hojassueltasok.files.wordpress.com/2017/11/ch011014a-brands-page_000.jpg" alt="me">
     </div>
   </main>
-  <center><h2 style="font-family: 'Times New Roman', Times, serif;font-size: 30px;"> Contact US
 
-  </h2></center>
+  <center>
+    <h2 style="font-family: 'Times New Roman', Times, serif;font-size: 30px;">Contact US</h2>
+  </center>
   <footer class="footer">
-    <div class="copy">&copy; 2024 fiain  </div>
-    <div class="bottom-links">
-      <div class="achievements" style="color: white;">
-        <div class="work">
-         <a href="https://www.instagram.com/"> <i class="fa fa-instagram"></i></a>
-          <p class="work-heading">Instagram</p>
-         
-        </div>
-        <div class="work">
-          <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-          <p class="work-heading">Facebook</p>
-          
-        </div>
-        <div class="work">
-         <a href="https://twitter.com/i/flow/login?lang=en"> <i class="fa fa-twitter"></i></a>
-          <p class="work-heading">Twitter</p>
-         
-        </div>
-        <div class="work">
-          <a href=""><i class="fa fa-whatsapp"></i></a>
-          <p class="work-heading">What's App</p>
-         
-        </div>
+    <div class="copy">&copy; 2024 Fiain</div>
+    <div class="achievements">
+      <div class="work">
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <p class="work-heading">Instagram</p>
       </div>
-     
+      <div class="work">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <p class="work-heading">Facebook</p>
+      </div>
+      <div class="work">
+        <a href="https://twitter.com/i/flow/login?lang=en"><i class="fa fa-twitter"></i></a>
+        <p class="work-heading">Twitter</p>
+      </div>
+      <div class="work">
+        <a href="#"><i class="fa fa-whatsapp"></i></a>
+        <p class="work-heading">WhatsApp</p>
+      </div>
     </div>
   </footer>
-  
 
-  
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
-</html>

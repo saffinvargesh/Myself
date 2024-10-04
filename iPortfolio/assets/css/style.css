@@ -440,39 +440,48 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+/* Skills Section */
+/* Skills Section */
+
+.vart {
+  display: flex;                /* Use flexbox for layout */
+  flex-wrap: wrap;        
+  flex-direction: row;     /* Allow items to wrap to the next line */
+  justify-content: center;      /* Center items horizontally */
+  align-items: center;          /* Center items vertically */
+  gap: 100px;                   /* Space between the icons */
+  color: rgb(19, 118, 157);  
+   padding-left: 40px;             /* Padding around the container */
 }
 
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
+
+.vart .fab {
+  font-size:80px;      
+  text-align: center;   
+   padding-left: 10px;     /* Default icon size */
+  transition: transform 0.3s;  /* Smooth transition for scaling */
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.vart .fab:hover {
+  transform: scale(1.2);       /* Scale icon on hover */
 }
 
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
+@media (max-width: 768px) {
+  .vart .fab {
+      font-size: 40px;         /* Smaller icon size on medium screens */
+  }
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #149ddd;
+@media (max-width: 480px) {
+  .vart .fab {
+      font-size: 30px;         /* Even smaller icon size on small screens */
+  }
 }
+
+  
+
+
+
 
 /*--------------------------------------------------------------
 # Resume
